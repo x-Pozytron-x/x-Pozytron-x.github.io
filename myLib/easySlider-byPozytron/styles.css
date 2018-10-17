@@ -6,6 +6,7 @@
 .sliderWrap {
  display: flex;
  transition: 1.5s;
+ overflow-y: hidden;
 }
 
 .arrow {
