@@ -1,4 +1,4 @@
-function easySlider(options){
+function tinySlider(options){
     var slider   = document.querySelector('#slider');
     var sliderWrap  = slider.querySelector('.sliderWrap');
     var arrLeft  = slider.querySelector('.arrLeft');
