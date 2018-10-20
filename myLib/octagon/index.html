@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Page Title</title>
+		<style>
+			.outside {
+		z-index: 1;
+		position: relative;
+		margin-bottom: 100px;
+		border-bottom: 85px solid red;
+		border-left: 50px solid transparent;
+		border-right: 50px solid transparent;
+		height: 0;
+		width: 100px;
+		}
+		.outside:after {
+		content: "";
+		z-index: 5;
+		position: absolute;
+		top: 85px;
+		margin-left: -50px;
+		display: block;
+		height: 0;
+		width: 100px;
+		border-top: 85px solid red;
+		border-left: 50px solid transparent;
+		border-right: 50px solid transparent;
+		}
+		.inside {
+		z-index: 10;
+		position: relative;
+		top: 15px;
+		margin-left: -30px;
+		height: 0;
+		width: 80px;
+		border-bottom: 70px solid white;
+		border-left: 40px solid transparent;
+		border-right: 40px solid transparent;
+		}
+		.inside:after {
+		z-index: 50;
+		content: "";
+		position: absolute;
+		top: 70px;
+		margin-left: -40px;
+		height: 0;
+		width: 80px;
+		border-top: 70px solid white;
+		border-left: 40px solid transparent;
+		border-right: 40px solid transparent;
+		}
+		</style>
+	</head>
+	<body>
+		<div class="outside"></div>
+		<div class="outside">
+			<div class="inside"></div>
+		</div>
+	</body>
+</html>
