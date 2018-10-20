@@ -10,6 +10,7 @@ function easySlider(options){
     slider.style.width = options.width + options.units;  
     sliderWrap.style.height = options.height + options.units;
     sliderWrap.style.width = options.width * items.length  + options.units;
+    slider.style.display = 'block';
 
     arrRight.style.display = 'none';
     

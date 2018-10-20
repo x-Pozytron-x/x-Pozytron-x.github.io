@@ -2,17 +2,8 @@
 <html>
   <head>
     <title>EasySlyder by Pozytron</title>
-    <link href="/myLib/easySlider-byPozytron/styles.css" rel="stylesheet">
-    <script src="/myLib/easySlider-byPozytron/script.js"></script>
-    <script>
-    window.onload = function () {
-    easySlider({
-    width: 100,
-    height: 25,
-    units: 'vw'
-    });
-    }
-    </script>
+    <script src="script.js"></script>
+    <link href="styles.css" rel="stylesheet">
   </head>
   <body>
     <div id="slider">
@@ -34,5 +25,14 @@
       <div class="arrow arrRight">&#9205;</div>
     </div>
     <p>without autoscroll, but soon... =)</p>
+    <script>
+    window.onload = function () {
+    easySlider({
+    width: 100,
+    height: 25,
+    units: 'vw'
+    });
+    }
+    </script>
   </body>
 </html>
