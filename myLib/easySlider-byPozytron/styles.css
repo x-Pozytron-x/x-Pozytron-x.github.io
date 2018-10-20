@@ -1,12 +1,14 @@
 #slider {
  position: relative;
  overflow-x: hidden;
+ box-sizing: border-box;
 }
 
 .sliderWrap {
  display: flex;
  transition: 1.5s;
  overflow-y: hidden;
+ box-sizing: border-box;
 }
 
 .arrow {
@@ -21,8 +23,8 @@
  line-height: 28px;
  font-weight: bold;
  cursor: pointer;
- box-sizing: border-box;
  background: #c3c3c3;
+ box-sizing: border-box;
  transition: 0.3s;
 }
 
@@ -45,6 +47,7 @@
  height: 100%;
  left: 100%;
  background-color: #ccc;
+ box-sizing: border-box;
 }
 
 .slideItem img {
@@ -52,4 +55,5 @@
  height: 100%;
  max-width: 100%;
  max-height: 100%;
+ box-sizing: border-box;
 }
