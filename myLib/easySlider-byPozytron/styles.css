@@ -1,3 +1,8 @@
+html,
+body {
+ box-sizing: border-box;
+}
+
 #slider {
  position: relative;
  overflow-x: hidden;
