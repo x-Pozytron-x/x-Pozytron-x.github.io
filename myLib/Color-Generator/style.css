@@ -1,0 +1,27 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+.paletra {
+ position: absolute;
+ top: 30vh;
+ width: 100vw;
+ height: 70vh;
+ background: #000;
+}
+
+.text {
+ position: absolute;
+ margin-left: -50px;
+ top: 35%;
+ left: 50%;
+ width: 100px;
+ height: 75px;
+ line-height: 75px;
+ text-align: center;
+ font-weight: bold;
+ text-transform: uppercase;
+ background: #fff;
+}
