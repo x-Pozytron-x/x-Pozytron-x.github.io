@@ -5,10 +5,12 @@ function easySlider(options){
     var arrRight = slider.querySelector('.arrRight');
     var items    = slider.getElementsByClassName('slideItem');
     var currentMarginLeft = 0;
-    slider.style.height = options.height + 'px'; 
-    slider.style.width = options.width + 'px';  
-    sliderWrap.style.height = options.height + 'px';
-    sliderWrap.style.width = options.width * items.length  + 'px';
+
+    slider.style.height = options.height + options.units; 
+    slider.style.width = options.width + options.units;  
+    sliderWrap.style.height = options.height + options.units;
+    sliderWrap.style.width = options.width * items.length  + options.units;
+
     arrRight.style.display = 'none';
     
     arrLeft.onclick  = function () { 
@@ -21,21 +23,23 @@ function easySlider(options){
     }
     function slideLeft () {
         arrRight.style.display = 'block';
-        newMarginLeft = parseInt(currentMarginLeft) - options.width + 'px';   
+        newMarginLeft = parseInt(currentMarginLeft) - options.width + options.units;   
         sliderWrap.style.marginLeft = newMarginLeft; 
         currentMarginLeft = newMarginLeft; 
-        if (currentMarginLeft == (options.width * (items.length - 1) * -1 + 'px')) {
+        if (currentMarginLeft == (options.width * (items.length - 1) * -1 + options.units)) {
             arrLeft.style.display = 'none';
         }
         return currentMarginLeft;
     }
     function slideRight () { 
         arrLeft.style.display = 'block';
-        newMarginLeft = parseInt(currentMarginLeft) + options.width + 'px';   
+        newMarginLeft = parseInt(currentMarginLeft) + options.width + options.units;   
         sliderWrap.style.marginLeft = newMarginLeft;
-        currentMarginLeft = newMarginLeft; 
-        if (currentMarginLeft == '0px') {
+        currentMarginLeft = parseInt(newMarginLeft); 
+        if (currentMarginLeft == '0') {
             arrRight.style.display = 'none';
+        } else {
+            currentMarginLeft = currentMarginLeft + options.units;
         }
         return currentMarginLeft;
     }
