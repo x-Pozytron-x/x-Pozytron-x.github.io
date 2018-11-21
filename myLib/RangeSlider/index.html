@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="slidecontainer">
+    <div class="topNum">
+      <span>20</span>
+      <span>40</span>
+      <span>60</span>
+      <span>80</span>
+    </div>
+    <input type="range" min="20" max="90" value="50" class="slider" id="myRange" step="10">
+    <div class="wrap">
+      <span class="current"></span></div>
+    <div class="bottomNum">
+      <span>30</span>
+      <span>50</span>
+      <span>70</span>
+      <span>90</span>
+    </div>
+    <h2>Тарифы</h2>
+    <div class="tarrif">
+      <span id="mbs"></span> Мбит/с -
+      <span id="price"></span> ₽ в месяц
+    </div>
+    <h3>Стоимость подключения 5000 ₽</h3>
+  </div>
+  <script src="script.js"></script>
+  <script>
+  window.onload = function() {
+    myRange({
+      '20': 5000,
+      '30': 6500,
+      '40': 8000,
+      '50': 9500,
+      '60': 11000,
+      '70': 12500,
+      '80': 14000,
+      '90': 15000
+    });
+  }
+  </script>
+</body>
+
+</html>
