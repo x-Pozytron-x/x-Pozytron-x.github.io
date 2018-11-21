@@ -17,7 +17,7 @@ function myRange(arr, text) {
   }
 
   changeTarrif(arr, range);
-  range.onchange = function() {
+  range.oninput = function() {
     changeTarrif(arr, range);
   }
   // console.log(Object.keys(arr).length);
