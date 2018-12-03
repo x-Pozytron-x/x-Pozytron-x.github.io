@@ -1,0 +1,128 @@
+.slider-track {
+  margin-top: -2px !important;
+  height: 5px !important;
+  background: white;
+  border: 1px #06458c solid;
+}
+
+.slider-horizontal:before {
+  content: '';
+  position: absolute;
+  display: block;
+  left: -49px;
+  width: 1px;
+  background: #06458c;
+  height: 20px;
+  top: 1px;
+}
+
+.slider-horizontal:after {
+  content: '';
+  position: absolute;
+  display: block;
+  right: -49px;
+  width: 1px;
+  background: #06458c;
+  height: 20px;
+  top: 1px;
+}
+
+.slider-track:before {
+  content: '';
+  position: absolute;
+  display: block;
+  left: -50px;
+  width: 50px;
+  background: rgb(172, 232, 255);
+  border: 1px #06458c solid;
+  height: 5px;
+}
+
+.slider-track:after {
+  content: '';
+  position: absolute;
+  display: block;
+  right: -50px;
+  width: 50px;
+  background: white;
+  border: 1px #06458c solid;
+  height: 5px;
+}
+
+.slider-selection.tick-slider-selection {
+  background: rgb(172, 232, 255);
+}
+
+.slider.slider-horizontal {
+  width: 60%;
+  margin: 0 20%;
+  top: 50px;
+}
+
+.slider.slider-horizontal .slider-tick-label-container {
+  margin-top: -40px;
+}
+
+.slider-tick-label {
+  position: relative;
+  top: 5px;
+}
+
+.slider-tick-label:nth-child(even) {
+  top: 70px;
+}
+
+.slider-tick.round {
+  background: white;
+  border: 1px solid #06458c;
+  opacity: 1;
+}
+
+.slider-tick.in-selection {
+  background: #06458c;
+}
+
+.slider-handle {
+  background: #06458c;
+  width: 35px;
+  height: 35px;
+  margin-left: -17px !important;
+  margin-top: -8px;
+  line-height: 35px;
+  text-align: center;
+  color: white;
+}
+
+#tarrif {
+  position: relative;
+  top: 70px;
+  text-align: center;
+}
+
+@media screen and (max-width:768px) {
+  .slider.slider-horizontal {
+    width: 80%;
+    margin: 35px 10%;
+  }
+
+  .slider-handle {
+    background: #06458c;
+    width: 25px;
+    height: 25px;
+    margin-left: -13px !important;
+    margin-top: -2px;
+    line-height: 24px;
+    text-align: center;
+    color: white;
+  }
+
+  .slider-tick {
+    width: 15px;
+    height: 15px;
+  }
+
+  .slider-tick.round {
+    margin-top: 3px;
+  }
+
+}
