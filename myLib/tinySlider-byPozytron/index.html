@@ -1,38 +1,45 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>TinySlyder by Pozytron</title>
-    <script src="script.js"></script>
-    <link href="styles.css" rel="stylesheet">
-  </head>
-  <body>
-    <div id="slider">
-      <div class="sliderWrap">
-        <div class="slideItem">
-          <img src="http://tutsmeshnoe.ru/head/header-6.jpg">
+
+<head>
+  <title>TinySlyder by Pozytron</title>
+  <script src="script.js"></script>
+  <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+  <hr>
+  <ul id="ol"></ul>
+  <hr>
+  <div id="slider">
+    <div class="sliderWrap">
+      <div class="slideItem">
+        <img src="http://tutsmeshnoe.ru/head/header-6.jpg">
         </div>
         <div class="slideItem">
           <img src="https://ic.pics.livejournal.com/nicoleduk/13033193/166551/166551_1000.jpg">
         </div>
-        <div class="slideItem">
-          <img src="http://lilu2.16mb.com/header/5.jpg">
+          <div class="slideItem">
+            <img src="http://lilu2.16mb.com/header/5.jpg">
         </div>
-        <div class="slideItem">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/ZambeziFloodPlain.jpg/1000px-ZambeziFloodPlain.jpg">
+            <div class="slideItem">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/ZambeziFloodPlain.jpg/1000px-ZambeziFloodPlain.jpg">
         </div>
-      </div>
-      <div class="arrow arrLeft">&#9204;</div>
-      <div class="arrow arrRight">&#9205;</div>
-    </div>
-    <p>without autoscroll, but soon... =)</p>
-    <script>
-    window.onload = function () {
-    tinySlider({
-    width: 100,
-    height: 25,
-    units: 'vw'
-    });
-    }
-    </script>
-  </body>
+            </div>
+            <div class="arrow arrLeft">&#9204;</div>
+            <div class="arrow arrRight">&#9205;</div>
+          </div>
+          <p>without autoscroll, but soon... =)</p>
+          <script src="/menu.js"></script>
+          <script>
+          window.onload = function() {
+            tinySlider({
+              width: 100,
+              height: 25,
+              units: 'vw'
+            });
+          }
+          </script>
+</body>
+
 </html>
