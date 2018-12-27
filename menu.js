@@ -1,16 +1,11 @@
-
-var menu =  
-    '<lh>Основы JavaScript</lh>' + 
-    '<li><a href="u1.html">Привет, мир!</a></li>' +
-    '<li><a href="u2.html">Переменные</a></li>' +
-    '<li><a href="u3.html">Правильный выбор имени переменной</a></li>' +
-    '<li><a href="u4.html">Основные операторы</a></li>' +
-    '<li><a href="u5.html">Взаимодействие с пользователем</a></li>' +
-    '<li><a href="u12.html">Условные операторы</a></li>' +
-    '<li><a href="u13.html">Логические операторы</a></li>' +
-    '<li><a href="u16.html">Конструкция switch</a></li>' +
-    '<li><a href="u18.html">Функц. выраж.</a></li>';
-window.onload = function (){
-    var ol = document.getElementById('ol');
-    ol.innerHTML = menu;
+var menu =
+  '<li><a href="/">На главную</a></li>' +
+  '<lh>Мои наработки</lh>' +
+  '<li><a href="/myLib/tinySlider-byPozytron">TinySlider (by Pozytron) - легкий (2.74KB) и  простой слайдер без jquery</a></li>' +
+  '<li><a href="/myLib/Color-Generator">Color-Generator</a></li>' +
+  '<li><a href="/myLib/octagon">Шестиугольник средствами html+css</a></li>' +
+  '<li><a href="/myLib/RangeSlider">Ползунок-(калькулятор) на bootstrap-js</a></li>';
+window.onload = function() {
+  var ol = document.getElementById('ol');
+  ol.innerHTML = menu;
 }
