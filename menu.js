@@ -7,7 +7,8 @@ var menu =
   '<li><a href="/myLib/RangeSlider">Ползунок-(калькулятор) на bootstrap-js</a></li>' +
   '<li><a href="/myProjects/SolarSystem">Солнечная система v.0.2.1</a></li>' +
   '</ul>';
-window.onload = function() {
+
+// window.onload = function() {
   var ol = document.querySelector('#ol');
   ol.innerHTML = menu;
   var mainFonts = document.querySelector('body');
@@ -23,6 +24,5 @@ window.onload = function() {
   }
    for (var i = 0; i < document.querySelectorAll('hr').length; i++) { 
     document.querySelectorAll('hr')[i].style.margin = '0';
-  }  
-  
-} 
+  }   
+// } 
