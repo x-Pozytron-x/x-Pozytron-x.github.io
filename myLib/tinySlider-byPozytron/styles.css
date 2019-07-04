@@ -1,6 +1,6 @@
 #tinySlider {
   position: relative;
-  overflow-x: hidden; 
+  overflow: hidden; 
 } 
 .sliderWrap {
   display: flex; 
