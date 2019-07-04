@@ -1,17 +1,20 @@
 * { 
  box-sizing: border-box;
 } 
-.paletra, .options {
-  position: relative; 
+html, body { 
   margin: 0;
   padding: 0;
+}
+.paletra, .options {
+  position: relative; 
   display: inline-block;
-  width: 50vw;
-  height: 50vw;
+  width: 70vw;
+  height: 70vw;
   float: right;
   background: #000;
 }
 .options {
+  width: 29.9vw;
   float: left;
   background: #fff;
 }
