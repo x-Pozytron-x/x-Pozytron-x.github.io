@@ -10,4 +10,9 @@ var menu =
 window.onload = function() {
   var ol = document.getElementById('ol');
   ol.innerHTML = menu;
-}
+  var mainFonts = document.querySelector('body');
+  mainFonts.style.fontFamily = '-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"';
+  mainFonts.style.margin = '0';
+  mainFonts.style.fontWeight = '400'; 
+  mainFonts.style.lineHeight = '1.5';
+} 
