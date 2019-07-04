@@ -8,13 +8,13 @@ var menu =
   '<li><a href="/myProjects/SolarSystem">Солнечная система v.0.2.1</a></li>' +
   '</ul>';
 window.onload = function() {
-  var ol = document.getElementById('ol');
+  var ol = document.querySelector('#ol');
   ol.innerHTML = menu;
   var mainFonts = document.querySelector('body');
   mainFonts.style.fontFamily = '-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"';
   mainFonts.style.margin = '0';
   mainFonts.style.fontWeight = '400'; 
   mainFonts.style.lineHeight = '1.5';
-  ol.querySelectorAll('a').style.color = '#007bff';
-  ol.querySelectorAll('a').style.textDecoration = 'none';
+  document.querySelectorAll('#ol li a').style.color = '#007bff';
+  document.querySelectorAll('#ol li a').style.textDecoration = 'none';
 } 
