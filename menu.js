@@ -16,7 +16,7 @@ window.onload = function() {
   mainFonts.style.fontWeight = '400'; 
   mainFonts.style.lineHeight = '1.5';
   var links = ol.querySelectorAll('a');
-  
+  document.querySelectorAll('hr').style.margin = '0';
   links.style.color = '#007bff';
   links.style.textDecoration = 'none';
 } 
