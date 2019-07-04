@@ -1,9 +1,12 @@
-* {
- margin: 0;
- padding: 0;
+* { 
  box-sizing: border-box;
 }
-
+a {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
 .paletra {
  position: absolute;
  top: 30vh;
