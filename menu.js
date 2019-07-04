@@ -15,4 +15,6 @@ window.onload = function() {
   mainFonts.style.margin = '0';
   mainFonts.style.fontWeight = '400'; 
   mainFonts.style.lineHeight = '1.5';
+  ol.querySelectorAll('a').style.color = '#007bff';
+  ol.querySelectorAll('a').style.textDecoration = 'none';
 } 
