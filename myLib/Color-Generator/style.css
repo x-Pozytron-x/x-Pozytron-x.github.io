@@ -4,6 +4,7 @@
 html, body { 
   margin: 0;
   padding: 0;
+  overflow: hidden;
 }
 .paletra, .options {
   position: relative; 
@@ -14,7 +15,7 @@ html, body {
   background: #000;
 }
 .options {
-  width: 29.9vw;
+  width: 30vw;
   float: left;
   background: #fff;
 }
