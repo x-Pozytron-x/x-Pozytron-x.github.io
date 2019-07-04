@@ -10,6 +10,7 @@ var menu =
 
 // window.onload = function() {
   var ol = document.querySelector('#ol');
+  ol.style.marginTop = '0';
   ol.innerHTML = menu;
   var mainFonts = document.querySelector('body');
   mainFonts.style.fontFamily = '-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"';
