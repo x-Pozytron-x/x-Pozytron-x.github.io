@@ -1,6 +1,7 @@
 var menu =
   '<li><a href="/">На главную</a></li>' +
   '<ul>' +
+  '<li><a href="/myLib/SorTable">SorTable (by Pozytron) - (1.39KB)(без jquery, чистый js)</a></li>' +
   '<li><a href="/myLib/tinySlider-byPozytron">TinySlider (by Pozytron) - легкий (3.14KB) и  простой слайдер без jquery</a></li>' +
   '<li><a href="/myLib/Color-Generator">Color-Generator</a></li>' +
   '<li><a href="/myLib/octagon">Шестиугольник средствами html+css</a></li>' +
