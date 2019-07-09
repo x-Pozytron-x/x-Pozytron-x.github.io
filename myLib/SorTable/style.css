@@ -1,0 +1,17 @@
+table {
+	vertical-align: top;
+	display: inline-block;
+	border-collapse: collapse;
+}
+td {
+	margin: 0;
+	padding: 4px 8px;
+	border: 1px solid;
+}
+thead td {
+	background-color: #ccc;
+	font-weight: bold;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	cursor: pointer;
+}
